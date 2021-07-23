@@ -6,53 +6,107 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Somando Números</title>
+    <title>Calculadora infantil</title>
+    <link rel="stylesheet" type="text/css" media="screen"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen"
+        href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 </head>
 
 <body>
-    <header>
-        <div class="header">
-            <h1><b>Calculando...</b></h1>
-            <h3>Vamos aprender juntos!</h3>
-            <img src="https://i.imgur.com/8mjpMUT.png" alt="Childandmath" width=400px height=100px><br>
-        </div>
-    </header>
-
     <main>
-        <div class="main">
-            <h2>Somando Valores</h2>
-            <input type="number" name="txtn1" id="txtn1"> +
-            <input type="number" name="txtn2" id="txtn2">
-            <input type="button" value="Somar" onclick="somar()">
-            <div id="res">Resultado</div>
+        <div class="col-4 offset-2">
+            <div class="container2">
+                <div class="texto">
+                    <span>
+                        <h3>Matemática no ensino infantil</h3>
+                    </span>
+                    <p>O estudo da matemática é importante no desenvolvimento do raciocínio lógico, da
+                        criatividade,
+                        da
+                        capacidade de investigação e da solução de problemas. A estatística, a ecologia e a
+                        computação são
+                        alguns exemplos de áreas profissionais que utilizam a matemática como ferramenta.
+                        Aprender
+                        matemática desde cedo torna a criança um adulto plenamente capaz de se adequar com
+                        facilidade ao mundo cada
+                        vez mais baseado em lógica no qual vivemos.</p>
+                    <p><u><b>Qual a principal característica social do ensino da matemática nas séries
+                                iniciais?</b></u><br>
+                        O conhecimento matemático, em relação ao senso comum, propicia que o educando possa
+                        analisar
+                        o
+                        contexto social a partir de informações quantitativas em relação a determinado assunto.
+                        Nesse
+                        sentido, o educando pode perceber que a Matemática propicia uma análise acerca da
+                        realidade
+                        contextualizada pelos dados numéricos.</p>
+                    <p><u><b>Como trabalhar lado lúdico na matemática?</b></u><br>
+                        Hoje, pais e educadores podem e devem utilizar o lúdico nas diferentes situações de
+                        aprendizado,
+                        durante suas aulas de matemática, porém nem sempre vemos pessoas que estão dispostas a
+                        mudar
+                        sua
+                        metodologia de ensino, deixando de lado um método tradicional para seguir uma postura
+                        lúdica,
+                        incluindo os jogos e brincadeiras em suas aulas. Isso acaba por desmotivar as crianças,
+                        fazendo-as até mesmo evitar o ato de buscar conhecimento, tomando isso como algo chato e
+                        sem
+                        sentido.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-4 offset-2">
+                    <div class="container1">
+                        <div class="header">
+                            <h1><b>Calculando...</b></h1>
+                            <h3>Vamos aprender juntos!</h3>
+                        </div>
+                        <div class="img">
+                            <img src="./img/criançasmath.png" alt="Childandmath" width=400px height=100px><br>
+                        </div>
+                        <div class="main">
+                            <h2>Somando Valores</h2>
+                            <input type="number" name="txtn1" id="txtn1"> +
+                            <input type="number" name="txtn2" id="txtn2">
+                            <input type="button" value="Somar" onclick="somar()">
+                            <div class="resultado" id="res">Resultado</div>
 
-            <h2>Subtraindo Valores</h2>
-            <input type="number" name="txtn3" id="txtn3"> -
-            <input type="number" name="txtn4" id="txtn4">
-            <input type="button" value="Subtrair" onclick="subtrair()">
-            <div id="res2">Resultado</div>
+                            <h2>Subtraindo Valores</h2>
+                            <input type="number" name="txtn3" id="txtn3"> -
+                            <input type="number" name="txtn4" id="txtn4">
+                            <input type="button" value="Subtrair" onclick="subtrair()">
+                            <div class="resultado" id="res2">Resultado</div>
 
-            <h2>Multiplicando Valores</h2>
-            <input type="number" name="txtn5" id="txtn5"> x
-            <input type="number" name="txtn6" id="txtn6">
-            <input type="button" value="Multiplicar" onclick="multiplicar()">
-            <div id="res3">Resultado</div>
+                            <h2>Multiplicando Valores</h2>
+                            <input type="number" name="txtn5" id="txtn5"> x
+                            <input type="number" name="txtn6" id="txtn6">
+                            <input type="button" value="Multiplicar" onclick="multiplicar()">
+                            <div class="resultado" id="res3">Resultado</div>
 
-            <h2>Dividindo Valores</h2>
-            <input type="number" name="txtn1" id="txtn7"> ÷
-            <input type="number" name="txtn2" id="txtn8">
-            <input type="button" value="Dividir" onclick="dividir()">
-            <div id="res4">Resultado</div>
+                            <h2>Dividindo Valores</h2>
+                            <input type="number" name="txtn1" id="txtn7"> ÷
+                            <input type="number" name="txtn2" id="txtn8">
+                            <input type="button" value="Dividir" onclick="dividir()">
+                            <div class="resultado" id="res4">Resultado</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 
     <footer>
         <div class="footer">
-            <h6>Desenvolvido por Viviana de Assis</h6>
+            <span>Desenvolvido por Viviana de Assis®</span>
         </div>
     </footer>
-
-    <script src="./script/script.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
 </body>
 
 </html>

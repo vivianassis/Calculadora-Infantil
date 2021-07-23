@@ -1,8 +1,11 @@
 body {
-    margin-left: 30px;
+    max-width: 1320px;
+    max-height: max-content;
+    min-width: 445px;
+    min-height: max-content;
     font: 18pt Helvetica;
     background-color: rgb(237, 249, 253, 0.5);
-    background-image: url(https://image.freepik.com/vetores-gratis/numero_1308-4708.jpg);
+    background-image: url(../img/numero_1308-4708.jpg);
     background-repeat: repeat-y;
     background-attachment: fixed;
     background-position: right center;
@@ -11,16 +14,22 @@ body {
     background-size: 60%, 100%;
 }
 
+div[class^="col-"] {
+    height: auto;
+}
+
 .header h1 {
-    margin-left: 10px;
+    margin-top: 1.3rem;
+    margin-bottom: 0;
+    margin-left: 18px;
     font-family: "Courier New", Courier, monospace;
     color: rgb(247, 140, 140);
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: rgb(10, 18, 122);
-    line-height: 0.5;
 }
 .header h3 {
-    margin-left: 10px;
+    margin-left: 12px;
+    margin-top: 0.5%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: rgb(111, 137, 250);
     -webkit-text-stroke-width: 1px;
@@ -28,21 +37,32 @@ body {
     line-height: 0;
 }
 
-.main h2 {
+.header img {
+    margin-left: 10px;
+}
+
+.container1 {
+    display: block;
+    margin-left: 2%;
+    width: 43vw;
+    height: 95vh;
+}
+
+.container1 h2 {
     margin-left: 10px;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
         "Helvetica Neue", sans-serif;
-    margin: 0.15em;
+    margin: 0.05em;
     color: blueviolet;
     display: -webkit-box;
 }
 
-.main input {
+.container1 input {
     font: normal 20pt;
     width: 100px;
 }
 
-div {
+.container1 .resultado {
     margin-left: 10px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: rgb(9, 255, 0);
@@ -50,10 +70,153 @@ div {
     -webkit-text-stroke-color: rgb(2, 65, 77);
 }
 
+.container2 {
+    display: flex;
+    width: 52vw;
+    height: 95vh;
+    height: auto;
+    margin-top: 0.01%;
+    margin-right: 3%;
+    float: right;
+    text-align: justify;
+    box-shadow: 0px 0px 15px rgba(166, 171, 172, 0.9);
+}
+
+.container2 h3 {
+    background-color: rgba(128, 229, 255, 0.767);
+    color: rgb(4, 4, 109);
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 10px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.808);
+}
+
+.container2 p {
+    background-color: rgba(116, 255, 209, 0.822);
+    color: rgb(2, 70, 8);
+    margin: 0;
+    padding-top: 2%;
+    padding: 3%;
+    font-size: 17px;
+    text-shadow:0px 1px 0 rgb(255,255,255),0px -1px 0 rgb(255,255,255),1px 0px 0 rgb(255,255,255),-1px 0px 0 rgb(255,255,255),1px 1px 0 rgb(255,255,255),1px -1px 0 rgb(255,255,255),-1px 1px 0 rgb(255,255,255),-1px -1px 0 rgb(255,255,255);
+    -webkit-text-shadow:0px 1px 0 rgb(255,255,255),0px -1px 0 rgb(255,255,255),1px 0px 0 rgb(255,255,255),-1px 0px 0 rgb(255,255,255),1px 1px 0 rgb(255,255,255),1px -1px 0 rgb(255,255,255),-1px 1px 0 rgb(255,255,255),-1px -1px 0 rgb(255,255,255);
+    -moz-text-shadow:0px 1px 0 rgb(255,255,255),0px -1px 0 rgb(255,255,255),1px 0px 0 rgb(255,255,255),-1px 0px 0 rgb(255,255,255),1px 1px 0 rgb(255,255,255),1px -1px 0 rgb(255,255,255),-1px 1px 0 rgb(255,255,255),-1px -1px 0 rgb(255,255,255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
 .footer {
-    background-color: aquamarine;
+    background-color: rgba(255, 255, 255, 0.788);
     color: black;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana,
+        sans-serif;
+    font-size: 12px;
     display: flex;
     justify-content: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        background-repeat: repeat;
+        margin: 1%;
+        padding: 0.02%;
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .container1 {
+        background-color: rgba(255, 255, 255, 0.726);
+    }
+
+    .container1,
+    .container2 {
+        width: 90vw;
+        display: flex;
+        justify-items: center;
+        flex-direction: column;
+    }
+    .header {
+        margin: 1%;
+        padding: 0.1%;
+        display: block;
+        width: 100%;
+        margin-top: 3%;
+    }
+
+    .header h1 {
+        margin: 2%;
+    }
+
+    .header h3 {
+        margin: 2%;
+        padding: 0.1%;
+    }
+
+    .footer {
+        margin-bottom: 0;
+        justify-content: center;
+        box-sizing: content-box;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1045px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        background-repeat: repeat;
+        margin: 1%;
+        padding: 0.02%;
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .container1 {
+        width: 90vw;
+        background-color: rgba(255, 255, 255, 0.726);
+        display: flex;
+        justify-items: center;
+        flex-direction: column;
+    }
+
+    .container2 {
+        width: 90vw;
+        display: flex;
+        justify-items: center;
+        flex-direction: column;
+        margin: 5%;
+        padding: 3%;
+    }
+    .header {
+        margin: 1%;
+        padding: 0.1%;
+        display: block;
+        width: 100%;
+        margin-top: 3%;
+    }
+
+    .header h1 {
+        margin: 2%;
+    }
+
+    .header h3 {
+        margin: 2%;
+        padding: 0.1%;
+    }
+
+    .footer {
+        margin-bottom: 0;
+        justify-content: center;
+        box-sizing: content-box;
+    }
 }
