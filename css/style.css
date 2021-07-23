@@ -1,0 +1,59 @@
+body {
+    margin-left: 30px;
+    font: 18pt Helvetica;
+    background-color: rgb(237, 249, 253, 0.5);
+    background-image: url(https://image.freepik.com/vetores-gratis/numero_1308-4708.jpg);
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+    background-position: right center;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-size: 60%, 100%;
+}
+
+.header h1 {
+    margin-left: 10px;
+    font-family: "Courier New", Courier, monospace;
+    color: rgb(247, 140, 140);
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(10, 18, 122);
+    line-height: 0.5;
+}
+.header h3 {
+    margin-left: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(111, 137, 250);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(13, 91, 107);
+    line-height: 0;
+}
+
+.main h2 {
+    margin-left: 10px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+        "Helvetica Neue", sans-serif;
+    margin: 0.15em;
+    color: blueviolet;
+    display: -webkit-box;
+}
+
+.main input {
+    font: normal 20pt;
+    width: 100px;
+}
+
+div {
+    margin-left: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(9, 255, 0);
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: rgb(2, 65, 77);
+}
+
+.footer {
+    background-color: aquamarine;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+}
